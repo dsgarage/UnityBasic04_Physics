@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -14,12 +11,12 @@ public class PhysicsTest3D : MonoBehaviour
 
     private void OnCollisionStay(Collision other)
     {
-        Debug.Log(other.gameObject.name + "に乗っているよ！");
+        Debug.Log(other.gameObject.name + "が乗っているよ！");
     }
 
     private void OnCollisionExit(Collision other)
     {
-        Debug.Log(other.gameObject.name + "から離れたよ！");
+        Debug.Log(other.gameObject.name + "が離れたよ！");
     }
     
     // 当たり判定ゾーン
@@ -31,11 +28,11 @@ public class PhysicsTest3D : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log(other.gameObject.name + "をすり抜けてるよ！");
+        Debug.Log(other.gameObject.name + "がすり抜けてるよ！");
     }
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log(other.gameObject.name + "から離れたよ！");
+        Debug.Log(other.gameObject.name + "が離れたよ！");
     }
 }
